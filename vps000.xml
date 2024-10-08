@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.xmlsoap.org/encoding/ AnyConnectProfile.xsd">
+
+	<ClientInitialization>
+		<UseStartBeforeLogon UserControllable="false">false</UseStartBeforeLogon>
+		<StrictCertificateTrust>false</StrictCertificateTrust>
+		<RestrictPreferenceCaching>false</RestrictPreferenceCaching>
+		<RestrictTunnelProtocols>IPSec</RestrictTunnelProtocols>
+		<BypassDownloader>true</BypassDownloader>
+		<WindowsVPNEstablishment>AllowRemoteUsers</WindowsVPNEstablishment>
+		<LocalLanAccess UserControllable="true">true</LocalLanAccess>
+		<DisableCaptivePortalDetection UserControllable="true">true</DisableCaptivePortalDetection>
+		<CertEnrollmentPin>pinAllowed</CertEnrollmentPin>
+		<CertificateMatch>
+			<KeyUsage>
+				<MatchKey>Digital_Signature</MatchKey>
+			</KeyUsage>
+			<ExtendedKeyUsage>
+				<ExtendedMatchKey>ClientAuth</ExtendedMatchKey>
+			</ExtendedKeyUsage>
+		</CertificateMatch>
+
+		<BackupServerList>
+			<HostAddress>https://utevroppjcbm.bja.sealos.run/?node=backup</HostAddress>
+		</BackupServerList>
+	</ClientInitialization>
+
+	<ServerList>
+		<HostEntry>
+			<HostName>000香港专线-[分流模式]</HostName>
+			<HostAddress>https://utevroppjcbm.bja.sealos.run/?node=hk</HostAddress>
+		</HostEntry>
+		<HostEntry>
+			<HostName>000香港专线-[全局模式]</HostName>
+			<HostAddress>https://utevroppjcbm.bja.sealos.run/?node=hkg</HostAddress>
+		</HostEntry>
+		<HostEntry>
+			<HostName>000台湾专线-[分流模式]</HostName>
+			<HostAddress>https://utevroppjcbm.bja.sealos.run/?node=tw</HostAddress>
+		</HostEntry>
+		<HostEntry>
+			<HostName>000台湾专线-[全局模式]</HostName>
+			<HostAddress>https://utevroppjcbm.bja.sealos.run/?node=twg</HostAddress>
+		</HostEntry>
+		<HostEntry>
+			<HostName>000美国专线-[分流模式]</HostName>
+			<HostAddress>https://utevroppjcbm.bja.sealos.run/?node=us</HostAddress>
+		</HostEntry>
+		<HostEntry>
+			<HostName>000美国专线-[全局模式]</HostName>
+			<HostAddress>https://utevroppjcbm.bja.sealos.run/?node=usg</HostAddress>
+		</HostEntry>
+		<HostEntry>
+			<HostName>安卓手机不支持分流功能</HostName>
+			<HostAddress>https://utevroppjcbm.bja.sealos.run/?node=hk</HostAddress>
+		</HostEntry>
+	</ServerList>
+</AnyConnectProfile>
+
+
+
